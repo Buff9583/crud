@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { IndexComponent } from './index/index.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { AddComponent } from './add/add.component';
+import { EditComponent } from './edit/edit.component';
+import {CrudUserService} from './services/crud-user.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IndexComponent,
+    AddComponent,
+    EditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [CrudUserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
