@@ -1,0 +1,48 @@
+.table1 {
+  background-color: ghostwhite;
+  border: 5px;
+  border-color: gray;
+}
+
+.header1 {
+  height: 65px;
+  background-color: #435d7d;
+  border-radius: 1px;
+}
+
+.manage {
+  font-size: 30px;
+  margin-top: 10px;
+  color: white;
+}
+
+.btn_del {
+  margin-top: 15px;
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+}
+
+.btn_add {
+  margin-left: 110px;
+  margin-bottom: 0px;
+  height: 30px;
+  width: 175px;
+  border-radius: 5px;
+}
+
+.img1 {
+  height: 20px;
+  width: 20px;
+  margin-left: -20px;
+}
+
+.body {
+  margin-top: 100px;
+}
+
+.pencil {
+  height: 20px;
+  width: 20px;
+}
+

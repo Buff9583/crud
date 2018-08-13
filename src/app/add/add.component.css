@@ -1,0 +1,36 @@
+.add{
+  width: 400px;
+  height: 520px;
+  background-color: white;
+  margin-top: 100px;
+  border-style: groove;
+  border-radius: 3px;
+}
+.employee{
+  font-family: 'Open Sans', sans-serif;
+  color: inherit;
+  font-size: 19px;
+  margin-right: 200px;
+  margin-top: 13px;
+}
+.name{
+  font-family: 'Open Sans', sans-serif;
+  color: inherit;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.text_area{
+  width: 90%;
+  height: 32px;
+}
+.btn{
+  border-radius: 2px;
+  height: 35px;
+  width: 100px;
+}
+.all_btn{
+  margin-left: 150px;
+}
+
+
+
