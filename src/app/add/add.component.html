@@ -6,16 +6,16 @@
       <p class="employee">Add Employee</p>
       <hr>
       <p class="name" align="left">Name</p>
-      <input type="text" class="text_area">
+      <input type="text" class="text_area" [(ngModel)]="user.name">
       <p> </p>
       <p class="name" align="left">Email</p>
-      <input type="text" class="text_area">
+      <input type="text" class="text_area" [(ngModel)]="user.email">
       <p> </p>
       <p class="name" align="left">Adress</p>
-      <input type="text" class="text_area">
+      <input type="text" class="text_area" [(ngModel)]="user.address">
       <p> </p>
       <p class="name" align="left">Phone</p>
-      <input type="text" class="text_area">
+      <input type="text" class="text_area" [(ngModel)]="user.phone">
       <hr>
       <div class="all_btn">
         <button type="button" class="btn btn-default">
@@ -25,7 +25,7 @@
           </a>
         </nav>
         </button>
-        <button type="button" class="btn btn-success">Add</button>
+        <button type="button" class="btn btn-success" (click)="addUser(user)">Add</button>
       </div>
     </div>
   </div>

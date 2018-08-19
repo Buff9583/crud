@@ -44,85 +44,23 @@
           </tr>
           </thead>
           <tbody>
-          <tr>
+          <tr *ngFor="let user of Userlist | async" detail-push>
             <th scope="row"><input type="checkbox"/></th>
-            <td>Thomas Hardy</td>
-            <td>thomashardy@mail.com</td>
-            <td>89 Chiaroscuro Rd, Portland, USA</td>
-            <td>(171) 555-2222</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.phone}}</td>
             <td>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
-              </button>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://cdn.iconscout.com/public/images/icon/free/png-512/delete-recycle-bin-waste-trash-iphonex-ios11-ui-34dae83457e8ba42-512x512.png">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><input type="checkbox"/></th>
-            <td>Dominique Perrier</td>
-            <td>dominiqueperrier@mail.com</td>
-            <td>@Obere Str. 57, Berlin, Germany</td>
-            <td>(313) 555-5735</td>
-            <td>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
-              </button>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://cdn.iconscout.com/public/images/icon/free/png-512/delete-recycle-bin-waste-trash-iphonex-ios11-ui-34dae83457e8ba42-512x512.png">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><input type="checkbox"/></th>
-            <td>Maria Anders</td>
-            <td>mariaanders@mail.com</td>
-            <td>25, rue Lauriston, Paris, France</td>
-            <td>(503) 555-9931</td>
-            <td>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
-              </button>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://cdn.iconscout.com/public/images/icon/free/png-512/delete-recycle-bin-waste-trash-iphonex-ios11-ui-34dae83457e8ba42-512x512.png">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><input type="checkbox"/></th>
-            <td>Fran Wilson</td>
-            <td>franwilson@mail.com</td>
-            <td>C/ Araquil, 67, Madrid, Spain</td>
-            <td>(204) 619-5731</td>
-            <td>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
-              </button>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://cdn.iconscout.com/public/images/icon/free/png-512/delete-recycle-bin-waste-trash-iphonex-ios11-ui-34dae83457e8ba42-512x512.png">
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"><input type="checkbox"/></th>
-            <td>Martin Blank</td>
-            <td>martinblank@mail.com</td>
-            <td>Via Monte Bianco 34, Turin, Italy</td>
-            <td>(480) 631-2097</td>
-            <td>
-              <button class="btn-link">
-                <img class="pencil btn-secondary"
-                     src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
-              </button>
+              <div class="col-lg-6 col-md-6 col-sm-6">
+              <nav>
+                <a routerLink="/edit">
+                  <button class="btn-link">
+                    <img class="pencil btn-secondary"
+                         src="https://image.freepik.com/icones-gratis/lapis-sorteio_318-10771.jpg">
+                  </button>
+                </a>
+              </nav>
+              </div>
               <button class="btn-link">
                 <img class="pencil btn-secondary"
                      src="https://cdn.iconscout.com/public/images/icon/free/png-512/delete-recycle-bin-waste-trash-iphonex-ios11-ui-34dae83457e8ba42-512x512.png">
