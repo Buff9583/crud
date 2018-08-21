@@ -12,6 +12,7 @@ import {AngularFireModule} from 'angularfire2';
 import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SomeFuncComponent } from './some-func/some-func.component';
 
 const FIREBASE_CONFIG = {
   apiKey: 'AIzaSyCQUF2Td1cOR8KMn74vGdL4qSZ6AWwodzU',
@@ -27,7 +28,8 @@ const FIREBASE_CONFIG = {
     AppComponent,
     IndexComponent,
     AddComponent,
-    EditComponent
+    EditComponent,
+    SomeFuncComponent
   ],
   imports: [
     BrowserModule,
